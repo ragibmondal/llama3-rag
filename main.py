@@ -26,7 +26,6 @@ def restart_assistant():
         st.session_state["file_uploader_key"] += 1
     st.rerun()
 
-
 def main() -> None:
     # Get LLM model
     llm_model = st.sidebar.selectbox("Select LLM", options=["llama3-70b-8192", "llama3-8b-8192", "mixtral-8x7b-32768"])
