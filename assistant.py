@@ -8,7 +8,7 @@ from phi.embedder.ollama import OllamaEmbedder
 from phi.vectordb.pgvector import PgVector2
 from phi.storage.assistant.postgres import PgAssistantStorage
 
-db_url = "postgres://vMWaZKbVU3EYymBj:oM6:iJ5[zS9]mZ3:@linada-9zf6d-postgresql.linada-9zf6d.svc.cluster.local:5432/linada"
+db_url = "postgres://vMWaZKbVU3EYymBj:oM6:iJ5[zS9]mZ3:@linada-9zf6d-postgresql.external.kinsta.app:30252/linada"
 
 
 def get_groq_assistant(
