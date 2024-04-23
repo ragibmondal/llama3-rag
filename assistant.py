@@ -8,7 +8,8 @@ from phi.embedder.ollama import OllamaEmbedder
 from phi.vectordb.pgvector import PgVector2
 from phi.storage.assistant.postgres import PgAssistantStorage
 
-db_url = "postgres://vMWaZKbVU3EYymBj:oM6:iJ5[zS9]mZ3:@linada-9zf6d-postgresql.linada-9zf6d.svc.cluster.local:5432/linada"
+db_url = "postgresql+psycopg://ai:ai@localhost:5532/ai"
+
 
 def get_groq_assistant(
     llm_model: str = "llama3-70b-8192",
@@ -25,7 +26,6 @@ def get_groq_assistant(
         if embeddings_model == "nomic-embed-text"
         else OpenAIEmbedder(model=embeddings_model, dimensions=1536)
     )
-
     # Define the embeddings table based on the embeddings model
     embeddings_table = (
         "groq_rag_documents_ollama" if embeddings_model == "nomic-embed-text" else "groq_rag_documents_openai"
