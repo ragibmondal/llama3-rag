@@ -1,11 +1,11 @@
 groq
 openai
-psycopg3
+ollama
 pgvector
 phidata
+psycopg3[binary]
 pypdf
 sqlalchemy
 streamlit
 bs4
 duckduckgo-search
-
