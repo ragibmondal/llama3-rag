@@ -1,6 +1,6 @@
 groq
 openai
-ollama
+psycopg3
 pgvector
 phidata
 pypdf
@@ -8,4 +8,4 @@ sqlalchemy
 streamlit
 bs4
 duckduckgo-search
-psycopg3
+
