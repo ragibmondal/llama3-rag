@@ -3,7 +3,7 @@ openai
 ollama
 pgvector
 phidata
-psycopg2
+psycopg2[binary]
 pypdf
 sqlalchemy
 streamlit
