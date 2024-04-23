@@ -8,4 +8,4 @@ sqlalchemy
 streamlit
 bs4
 duckduckgo-search
-psycopg2
+psycopg3
